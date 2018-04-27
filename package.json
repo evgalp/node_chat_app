@@ -1,0 +1,28 @@
+{
+  "name": "node_chat_app",
+  "version": "1.0.0",
+  "description": "node chat app",
+  "main": "app/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evgalp/node_chat_app.git"
+  },
+  "author": "evgalp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evgalp/node_chat_app/issues"
+  },
+  "homepage": "https://github.com/evgalp/node_chat_app#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "socket.io": "^2.1.0"
+  },
+  "devDependencies": {
+    "dotenv": "^5.0.1",
+    "nodemon": "^1.17.3"
+  }
+}

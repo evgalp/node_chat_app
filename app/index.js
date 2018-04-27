@@ -11,3 +11,11 @@ const server = app.listen(4000, () => {
 app.use(express.static('app/public'));
 
 const io = socket(server);
+
+io.on('connection', (socket) => {
+  console.log('socket connection established');
+
+  socket.on('chat', (data) => {
+    io.sockets.emit('chat', data);
+  })
+})
